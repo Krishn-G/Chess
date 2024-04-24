@@ -22,8 +22,10 @@ selection = 100                                                                 
 w_captured = []
 b_captured = []
 valid_moves = []
+castling_moves= []
 
 counter = 0                                                                              #Game winning variables
+check = False
 winner = ''
 game_over = False
 
@@ -47,3 +49,10 @@ b_pieces = ['Rook', 'Knight', 'Bishop', 'King', 'Commander', 'Bishop', 'Knight',
 b_location = [(0, 7), (1, 7), (2, 7), (3, 7), (4, 7), (5, 7), (6, 7), (7, 7),
                 (0, 6), (1, 6), (2, 6), (3, 6), (4, 6), (5, 6), (6, 6), (7, 6)]
 promotions = ['Commander', 'Bishop', 'Rook', 'Knight']
+w_moved = [False, False, False, False, False, False, False, False,
+           False, False, False, False, False, False, False, False ]
+b_moved = [False, False, False, False, False, False, False, False,
+           False, False, False, False, False, False, False, False ]
+w_options = []
+b_options = []
+castling_moves = []
